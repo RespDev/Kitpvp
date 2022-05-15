@@ -1,0 +1,17 @@
+net\minigameheaven\kitpvp\commands\item\ListCommand.class
+plugin.yml
+net\minigameheaven\kitpvp\commands\StreakCommand.class
+net\minigameheaven\kitpvp\commands\CreativeCommand.class
+net\minigameheaven\kitpvp\items\AdminItems.class
+net\minigameheaven\kitpvp\commands\AbuseCommand.class
+net\minigameheaven\kitpvp\commands\ItemCommand.class
+net\minigameheaven\kitpvp\items\PlayerItems.class
+net\minigameheaven\kitpvp\commands\KitCommand.class
+net\minigameheaven\kitpvp\commands\KillsCommand.class
+net\minigameheaven\kitpvp\commands\DeathsCommand.class
+net\minigameheaven\kitpvp\commands\KillTestCommand.class
+net\minigameheaven\kitpvp\commands\SurvivalCommand.class
+net\minigameheaven\kitpvp\commands\item\GiveCommand.class
+net\minigameheaven\kitpvp\Kitpvp.class
+net\minigameheaven\kitpvp\items\Kits.class
+net\minigameheaven\kitpvp\commands\item\HelpCommand.class

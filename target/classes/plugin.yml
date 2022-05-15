@@ -1,0 +1,6 @@
+name: Kitpvp
+author: Palace Network
+version: 0.0.1
+depend: [Core]
+softdepend: []
+main: net.minigameheaven.kitpvp.Kitpvp
