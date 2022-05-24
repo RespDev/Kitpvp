@@ -17,11 +17,12 @@ public class KitCommand extends CoreCommand {
     @Override
     protected void handleCommand(CPlayer player, String[] args) throws CommandException {
     	player.sendMessage(ChatColor.YELLOW + "Giving you kit normal!");
-    	player.setHelmet(Kits.helmet);
-    	player.setChestplate(Kits.chest);
-    	player.setLeggings(Kits.leggings);
-    	player.setBoots(Kits.boots);
-    	player.addToInventory(Kits.sword);
+    	player.setHelmet(Kits.Normalhelmet);
+    	player.setChestplate(Kits.Normalchest);
+    	player.setLeggings(Kits.Normalleggings);
+    	player.setBoots(Kits.Normalboots);
+    	player.addToInventory(Kits.Normalsword);
     	player.addToInventory(Kits.steak);
+    	player.setInventorySlot(8, Kits.Normalbow);
     }
 }

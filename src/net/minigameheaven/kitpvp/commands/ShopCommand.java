@@ -1,23 +1,20 @@
 package net.minigameheaven.kitpvp.commands;
 
-import org.bukkit.ChatColor;
-import org.bukkit.Statistic;
-
+import net.minigameheaven.kitpvp.menus.MenuManager;
 import network.palace.core.command.CommandException;
 import network.palace.core.command.CommandMeta;
 import network.palace.core.command.CoreCommand;
 import network.palace.core.player.CPlayer;
 
-@CommandMeta(description = "Deaths command")
-public class DeathsCommand extends CoreCommand {
+@CommandMeta(description = "Kit command")
+public class ShopCommand extends CoreCommand {
 
-    public DeathsCommand() {
-        super("deaths");
+    public ShopCommand() {
+        super("shop");
     }
 
     @Override
     protected void handleCommand(CPlayer player, String[] args) throws CommandException {
-    	int deaths = player.getBukkitPlayer().getStatistic(Statistic.DEATHS);
-    	player.sendMessage(ChatColor.GREEN + "Deaths: " + deaths);
+    	player.openInventory(MenuManager.Shop);
     }
 }

@@ -1,6 +1,8 @@
 package net.minigameheaven.kitpvp.commands;
 
 import org.bukkit.ChatColor;
+import org.bukkit.Statistic;
+
 import network.palace.core.command.CommandException;
 import network.palace.core.command.CommandMeta;
 import network.palace.core.command.CoreCommand;
@@ -15,7 +17,7 @@ public class KillsCommand extends CoreCommand {
 
     @Override
     protected void handleCommand(CPlayer player, String[] args) throws CommandException {
-    	int kills = 0;
+    	int kills = player.getBukkitPlayer().getStatistic(Statistic.PLAYER_KILLS);
     	player.sendMessage(ChatColor.GREEN + "Kills: " + kills);
     }
 }

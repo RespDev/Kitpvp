@@ -16,6 +16,7 @@ public class PlayerItems {
 	 */
 	
 	public static ItemStack buz;
+	public static ItemStack enchantedGold;
 	
 	public static void createBuzzy() {
 		// Buzzy
@@ -23,6 +24,7 @@ public class PlayerItems {
 		ItemMeta buzzymeta = buzzy.getItemMeta();
 		buzzymeta.setDisplayName(ChatColor.GOLD + "Buzzy");
 		buzzymeta.addEnchant(Enchantment.LUCK, 1, false);
+		buzzymeta.addEnchant(Enchantment.DAMAGE_ALL, 3, false);
 		List<String> lo = new ArrayList<>();
 		lo.add(ChatColor.GREEN + "Ability: Zap");
 		lo.add(ChatColor.GREEN + "Strike lightning when you");
@@ -35,5 +37,20 @@ public class PlayerItems {
 		buzzymeta.setLore(lo);
 		buzzy.setItemMeta(buzzymeta);
 		buz = buzzy;
+	}
+	
+	public static void createEnchantedGold() {
+		// Buzzy
+		ItemStack ec = new ItemStack(Material.GOLD_BLOCK);
+		ItemMeta ecmeta = ec.getItemMeta();
+		ecmeta.setDisplayName(ChatColor.GOLD + "" + ChatColor.BOLD + "ENCHANTED GOLD");
+		ecmeta.addEnchant(Enchantment.LUCK, 1, false);
+		ecmeta.addEnchant(Enchantment.DAMAGE_ALL, 3, false);
+		List<String> lo = new ArrayList<>();
+		lo.add(ChatColor.RED + "" + ChatColor.BOLD + "VERY RARE");
+		ecmeta.addItemFlags(ItemFlag.HIDE_ENCHANTS, ItemFlag.HIDE_UNBREAKABLE);
+		ecmeta.setLore(lo);
+		ec.setItemMeta(ecmeta);
+		enchantedGold = ec;
 	}
 }

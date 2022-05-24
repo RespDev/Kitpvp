@@ -9,47 +9,53 @@ public class Kits {
 	 */
 	
 	// Normal Kit
-	public static ItemStack helmet;
-	public static ItemStack chest;
-	public static ItemStack leggings;
-	public static ItemStack boots;
-	public static ItemStack sword;
+	public static ItemStack Normalhelmet;
+	public static ItemStack Normalchest;
+	public static ItemStack Normalleggings;
+	public static ItemStack Normalboots;
 	public static ItemStack steak;
+	public static ItemStack Normalbow;
+	public static ItemStack Normalsword;
 	
-	public static void createHat() {
+	public static void createNormalHat() {
 		ItemStack hat = new ItemStack(Material.IRON_HELMET);
-		helmet = hat;
+		Normalhelmet = hat;
 	}	
-	public static void createShirt() {
+	public static void createNormalShirt() {
 		ItemStack shirt = new ItemStack(Material.IRON_CHESTPLATE);
-		chest = shirt;
+		Normalchest = shirt;
 	}	
-	public static void createPants() {
+	public static void createNormalPants() {
 		ItemStack leg = new ItemStack(Material.IRON_LEGGINGS);
-		leggings = leg;
+		Normalleggings = leg;
 	}
-	public static void createShoes() {
+	public static void createNormalShoes() {
 		ItemStack shoe = new ItemStack(Material.IRON_BOOTS);
-		boots = shoe;
+		Normalboots = shoe;
 	}
-	public static void createSword() {
-		ItemStack weapon = new ItemStack(Material.IRON_SWORD);
-		sword = weapon;
-	}
-	public static void createFood() {
+	public static void createNormalFood() {
 		ItemStack food = new ItemStack(Material.COOKED_BEEF, 64);
 		steak = food;
+	}
+	public static void createNormalSword() {
+		ItemStack weapon = new ItemStack(Material.IRON_SWORD);
+		Normalsword = weapon;
+	}
+	public static void createNormalBow() {
+		ItemStack bow = new ItemStack(Material.BOW);
+		Normalbow = bow;
 	}
 	
 	// Loads all kits
 	public static void loadKits() {
 		// Normal kit
-		createHat();
-		createShirt();
-		createPants();
-		createShoes();
-		createSword();
-		createFood();
+		createNormalHat();
+		createNormalShirt();
+		createNormalPants();
+		createNormalShoes();
+		createNormalFood();
+		createNormalSword();
+		createNormalBow();
 		// TODO make more kits
 	}
 }

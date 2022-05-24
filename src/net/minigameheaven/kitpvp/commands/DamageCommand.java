@@ -8,16 +8,16 @@ import network.palace.core.command.CommandMeta;
 import network.palace.core.command.CoreCommand;
 import network.palace.core.player.CPlayer;
 
-@CommandMeta(description = "Deaths command")
-public class DeathsCommand extends CoreCommand {
+@CommandMeta(description = "Damage command")
+public class DamageCommand extends CoreCommand {
 
-    public DeathsCommand() {
-        super("deaths");
+    public DamageCommand() {
+        super("damage");
     }
 
     @Override
     protected void handleCommand(CPlayer player, String[] args) throws CommandException {
-    	int deaths = player.getBukkitPlayer().getStatistic(Statistic.DEATHS);
-    	player.sendMessage(ChatColor.GREEN + "Deaths: " + deaths);
+    	int damage = player.getBukkitPlayer().getStatistic(Statistic.DAMAGE_DEALT);
+    	player.sendMessage(ChatColor.GREEN + "Damage Dealt: " + damage);
     }
 }
